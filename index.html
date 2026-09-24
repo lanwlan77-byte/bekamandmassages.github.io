@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuswandari | Bekam & Massage</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span>Y</span>
+                Yuswandari
+            </a>
+
+            <nav>
+                <a href="#home">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <a href="#booking" class="nav-btn">
+                Booking
+            </a>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <div class="badge">
+                    ✦ Perawatan Tradisional & Profesional
+                </div>
+
+                <h1>
+                    Rawat Tubuh,<br>
+                    <span>Tenangkan Pikiran.</span>
+                </h1>
+
+                <p>
+                    Nikmati pengalaman bekam dan massage yang nyaman
+                    untuk membantu tubuh terasa lebih rileks dan segar.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://wa.me/6281298139710" class="primary-btn">
+                        Booking Sekarang →
+                    </a>
+
+                    <a href="#layanan" class="secondary-btn">
+                        Lihat Layanan
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <div>
+                        <strong>500+</strong>
+                        <small>Pelanggan</small>
+                    </div>
+
+                    <div>
+                        <strong>4.9</strong>
+                        <small>Rating Pelayanan</small>
+                    </div>
+
+                    <div>
+                        <strong>Profesional</strong>
+                        <small>Pelayanan</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-image">
+                <div class="image-card">
+                    <div class="circle-decoration"></div>
+
+                    <div class="massage-icon">
+                        ♨
+                    </div>
+
+                    <div class="floating-card">
+                        <span>✓</span>
+                        <div>
+                            <strong>Pelayanan Nyaman</strong>
+                            <small>Untuk kesehatan & relaksasi</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services" id="layanan">
+        <div class="container">
+
+            <div class="section-title">
+                <span>LAYANAN KAMI</span>
+                <h2>Perawatan untuk tubuh yang lebih nyaman</h2>
+                <p>
+                    Pilihan layanan yang dapat membantu tubuh menjadi
+                    lebih rileks dan terasa segar.
+                </p>
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🩸</div>
+                    <h3>Bekam</h3>
+                    <p>
+                        Layanan bekam dengan proses yang nyaman
+                        dan dilakukan dengan memperhatikan kebersihan.
+                    </p>
+                    <a href="#booking" data-service="1">
+                        Booking layanan →
+                    </a>
+                </div>
+
+
+                <div class="service-card featured">
+                    <div class="service-icon">💆</div>
+                    <h3>Massage</h3>
+                    <p>
+                        Pijat relaksasi untuk membantu mengurangi
+                        rasa pegal dan membuat tubuh lebih rileks.
+                    </p>
+                    <a href="#booking" data-service="2">
+                        Booking layanan →
+                    </a>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Relaksasi</h3>
+                    <p>
+                        Perawatan yang dirancang untuk memberikan
+                        suasana tenang dan nyaman bagi tubuh.
+                    </p>
+                    <a href="#booking" data-service="3">
+                        Booking layanan →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="booking" id="booking">
+        <div class="container booking-content">
+            <div class="booking-intro">
+                <span class="section-label">RESERVASI</span>
+                <h2>Atur waktu perawatanmu.</h2>
+                <p>Isi data berikut dan kami akan menyiapkan jadwal bekam atau massage untukmu.</p>
+                <div class="booking-note">Jam layanan: 09.00 - 20.00 WIB</div>
+            </div>
+
+            <form class="booking-form" id="booking-form">
+                <div class="form-row">
+                    <label>Nama lengkap
+                        <input type="text" name="customer_name" placeholder="Nama kamu" maxlength="120" required>
+                    </label>
+                    <label>Nomor WhatsApp
+                        <input type="tel" name="phone" placeholder="08xxxxxxxxxx" maxlength="30" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>Pilih layanan
+                        <select name="service_id" required>
+                            <option value="">Pilih layanan</option>
+                            <option value="1">Bekam</option>
+                            <option value="2">Massage</option>
+                            <option value="3">Relaksasi</option>
+                        </select>
+                    </label>
+                    <label>Tanggal
+                        <input type="date" name="booking_date" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>Jam kedatangan
+                        <input type="time" name="booking_time" min="09:00" max="20:00" required>
+                    </label>
+                    <label>Catatan <span>(opsional)</span>
+                        <input type="text" name="notes" placeholder="Keluhan atau permintaan khusus">
+                    </label>
+                </div>
+                <button type="submit" class="primary-btn">Kirim Booking →</button>
+                <p class="booking-status" id="booking-status" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="tentang">
+        <div class="container about-content">
+
+            <div class="about-visual">
+                <div class="about-box">
+                    <span>Y</span>
+                    <h3>Yuswandari</h3>
+                    <p>Bekam & Massage</p>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">TENTANG KAMI</span>
+
+                <h2>
+                    Memberikan pelayanan dengan
+                    <span>sepenuh hati.</span>
+                </h2>
+
+                <p>
+                    Yuswandari merupakan layanan bekam dan massage
+                    yang mengutamakan kenyamanan pelanggan. Kami
+                    berusaha memberikan pelayanan yang ramah,
+                    bersih dan nyaman.
+                </p>
+
+                <div class="check-list">
+                    <div>✓ Tempat nyaman</div>
+                    <div>✓ Pelayanan ramah</div>
+                    <div>✓ Mengutamakan kebersihan</div>
+                    <div>✓ Reservasi mudah melalui WhatsApp</div>
+                </div>
+
+                <a href="https://wa.me/6281298139710" class="primary-btn">
+                    Hubungi Kami →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta" id="kontak">
+        <div class="container cta-content">
+            <div>
+                <span>SIAP UNTUK LEBIH RILEKS?</span>
+                <h2>Jadwalkan perawatanmu hari ini.</h2>
+                <p>
+                    Hubungi kami melalui WhatsApp untuk informasi
+                    dan reservasi layanan.
+                </p>
+            </div>
+
+            <a href="https://wa.me/6281298139710" class="cta-button">
+                WhatsApp Kami →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+
+            <div>
+                <h3>Yuswandari</h3>
+                <p>Bekam & Massage</p>
+            </div>
+
+            <div class="footer-contact">
+                <p>📍 Jl. Kyai Mojo Gg. Kaweng No. 19</p>
+                <p>📱 081298139710</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Yuswandari Bekam & Massage. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        const bookingForm = document.querySelector('#booking-form');
+        const bookingStatus = document.querySelector('#booking-status');
+        const bookingDate = bookingForm.querySelector('[name="booking_date"]');
+        bookingDate.min = new Date().toISOString().split('T')[0];
+
+        document.querySelectorAll('[data-service]').forEach((link) => {
+            link.addEventListener('click', () => {
+                bookingForm.querySelector('[name="service_id"]').value = link.dataset.service;
+            });
+        });
+
+        bookingForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            bookingStatus.className = 'booking-status';
+            bookingStatus.textContent = 'Menyimpan booking...';
+
+            try {
+                const response = await fetch('api/booking.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(Object.fromEntries(new FormData(bookingForm)))
+                });
+                const result = await response.json();
+                bookingStatus.textContent = result.success
+                    ? `${result.message} Kode: ${result.booking_code}`
+                    : result.message;
+                bookingStatus.classList.add(result.success ? 'success' : 'error');
+                if (result.success) bookingForm.reset();
+            } catch (error) {
+                bookingStatus.textContent = 'Booking belum tersimpan. Jalankan halaman melalui server PHP.';
+                bookingStatus.classList.add('error');
+            }
+        });
+    </script>
+
+</body>
+</html>
